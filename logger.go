@@ -47,6 +47,7 @@ func Logger(logger logrus.FieldLogger) gin.HandlerFunc {
 			"clientIP":   clientIP,
 			"method":     c.Request.Method,
 			"path":       path,
+			"direction":  "RP",
 			"referer":    referer,
 			"dataLength": dataLength,
 			"userAgent":  clientUserAgent,
